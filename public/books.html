@@ -14,7 +14,7 @@
   <a class="nav-link" href="books.html">Books</a>
   <a class="nav-link" href="information.html">User Information</a>
 </nav>
-<table class="table">
+<table id="bookTable" class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
@@ -101,5 +101,10 @@
   <hr>
   <p> This image is courtesy of the IU Athletics homepage
     <br> at <a href="https://iuhoosiers.com/sports/2015/4/1/GEN_2014010175.aspx">Indiana Hoosiers Homepage.</a>
+    <script src="js/tablesort.min.js"> </script>
+    <script>
+    // Tablesort plugin from http://tristen.ca/tablesort/demo/
+    new Tablesort(document.getElementById('bookTable'));
+  </script>
 </footer>
 </html>
