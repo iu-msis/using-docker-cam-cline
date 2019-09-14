@@ -15,21 +15,21 @@
   <a class="nav-link" href="information.html">User Information</a>
 </nav>
 <h1>User Information</h1>
-<div class="fakeimg" id="fakeimg">
-<a href="https://randomuser.me/api/portraits/women/49.jpg">
-<img src="img/profile.jpg" alt="Sylvia Bell" style="border:1px solid black;" />
-</a>
+
 <p>Source: https://randomuser.me/</p>
-</div>
+
+<div class="randomPic" id="user">
+  <a v-bind:href="user.picture.large">
+    <img class= "randomPicThumbnail" v-bind:src= "user.picture.medium" id="randomProfilePic"></a>
 
 <div class="bio" id="user">
-
-<p>Name: {{user.name.first}} {{user.name.last}}</p>
-<p>Location: {{user.location.city}}, {{user.location.state}}</p>
-<p>Birthdate: {{user.dob.date}} </p>
-<p>Age: {{user.dob.age}} </p>
-<p>Email: <a href="{{user.email}}">{{user.email}} </a></p>
+  <p>Name: {{user.name.first}} {{user.name.last}}</p>
+  <p>Location: {{user.location.city}}, {{user.location.state}}</p>
+  <p>Birthdate: {{user.dob.date}} </p>
+  <p>Age: {{user.dob.age}} </p>
+  <p>Email: <a href="{{user.email}}">{{user.email}} </a></p>
 </div>
+
 <footer>
   <a href="https://iuhoosiers.com/images/2015/3/20/MBBGeneric1280x800.jpg">
     <img src="img/IuLogo.jpg" width="200" height="150" alt="IU Logo, storming the court" style="border:1px solid black;" />
