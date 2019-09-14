@@ -22,12 +22,14 @@
   <a v-bind:href="user.picture.large">
     <img class= "randomPicThumbnail" v-bind:src= "user.picture.medium" id="randomProfilePic"></a>
 
-<div class="bio" id="user">
-  <p>Name: {{user.name.first}} {{user.name.last}}</p>
-  <p>Location: {{user.location.city}}, {{user.location.state}}</p>
-  <p>Birthdate: {{user.dob.date}} </p>
-  <p>Age: {{user.dob.age}} </p>
-  <p>Email: <a href="{{user.email}}">{{user.email}} </a></p>
+
+    <div class="bio" id="user">
+      <p>Name: {{user.name.first}} {{user.name.last}}</p>
+      <p>Location: {{user.location.city}}, {{user.location.state}}</p>
+      <p>Birthdate: {{user.dob.date}} </p>
+      <p>Age: {{user.dob.age}} </p>
+      <p>Email: <a href="{{user.email}}">{{user.email}} </a></p>
+    </div>
 </div>
 
 <footer>
