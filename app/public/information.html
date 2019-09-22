@@ -31,7 +31,10 @@
       <p>Email:<a v-bind:href="'mailto:'+user.email" target="_blank"> {{user.email}}</a></p>
     </div>
 </div>
-
+<form @submit.prevent="GetNewUser">
+  <button type="submit" class="btn btn-danger">Refresh Information</button>
+</form>
+<br></br>
 <footer>
   <a href="https://iuhoosiers.com/images/2015/3/20/MBBGeneric1280x800.jpg">
     <img src="img/IuLogo.jpg" width="200" height="150" alt="IU Logo, storming the court" style="border:1px solid black;" />
